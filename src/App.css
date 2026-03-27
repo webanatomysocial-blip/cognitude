@@ -1,0 +1,26 @@
+.app-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+section:not(.hero):not(.partners):not(.expertise-section):not(.cr-section):not(.ce-section):not(.ww-section):not(.insights-section):not(.cta-section) {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section:not(.hero):not(.partners):not(.expertise-section):not(.cr-section):not(.ce-section):not(.ww-section):not(.insights-section):not(.cta-section) {
+    padding: 6rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section:not(.hero):not(.partners):not(.expertise-section):not(.cr-section):not(.ce-section):not(.ww-section):not(.insights-section):not(.cta-section) {
+    padding: 8rem 6rem;
+  }
+}

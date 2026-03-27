@@ -1,0 +1,143 @@
+/* =============================================
+   Creative Engineering Section
+   ============================================= */
+
+.ce-section {
+  background-color: #000000;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.ce-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── Section Header (Center-Aligned) ── */
+.ce-header {
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ce-label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
+.ce-label em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.ce-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.ce-title em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ── Grid ── */
+.ce-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ── Card ── */
+.ce-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Card Content (Above Image) ── */
+.ce-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.ce-num {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Inter', sans-serif;
+}
+
+.ce-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ce-card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── Visual (Image) ── */
+.ce-visual {
+  width: 100%;
+  aspect-ratio: 1.1;
+  background-color: #000;
+  border-radius: 8px; /* subtle softening, matching reference look */
+  overflow: hidden;
+  position: relative;
+}
+
+.ce-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: brightness(0.9);
+}
+
+.ce-card:hover .ce-img {
+  transform: scale(1.04);
+  filter: brightness(1.1);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .ce-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ce-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .ce-inner {
+    padding: 0 24px;
+  }
+  
+  .ce-header {
+    margin-bottom: 50px;
+  }
+}

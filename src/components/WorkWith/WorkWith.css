@@ -1,0 +1,235 @@
+/* =============================================
+   Who We Work With Section (Staggered Grid)
+   ============================================= */
+
+.ww-section {
+  position: relative;
+  /* background-color: #000000; */
+  padding: 80px 0;
+  /* overflow: hidden; */
+  min-height: 100vh;
+  background-image: url("/images/work.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.ww-inner {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Header ── */
+.ww-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ww-tagline {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.ww-title {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.ww-title em {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ── Staggered Layout ── */
+.ww-cards-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.ww-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Vertical Stagger Logic (5 Columns) */
+.col-1 {
+  transform: translateY(123px);
+}
+.col-2 {
+  transform: translateY(16px);
+}
+.col-center {
+  transform: translateY(0px);
+}
+.col-4 {
+  transform: translateY(1px);
+}
+.col-5 {
+  transform: translateY(118px);
+}
+
+/* ── Small Cards ── */
+.ww-card {
+  width: 220px;
+  min-height: 190px;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.ww-card:hover {
+  background: rgba(20, 20, 20, 0.6);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.ww-card-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.ww-card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ww-card-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 0.88rem;
+  color: #a1a1aa; /* Muted gray text */
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ── Hero Center Card ── */
+.ww-hero-card {
+  width: 250px;
+  height: 440px;
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ww-logo-box {
+  width: 120px;
+  height: 120px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.05);
+}
+
+.ww-logo-box img {
+  width: 100px;
+  height: 100px;
+}
+.ww-center-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.ww-center-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 70%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1350px) {
+  .ww-cards-layout {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .ww-col {
+    transform: none !important;
+  }
+
+  .ww-hero-card {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ww-section {
+    padding: 80px 0;
+  }
+
+  .ww-title {
+    font-size: 2.8rem;
+  }
+
+  .ww-cards-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ww-col {
+    width: 100%;
+    max-width: 320px;
+    margin-top: -15px;
+  }
+
+  .ww-card {
+    width: 100%;
+  }
+
+  .ww-hero-card {
+    width: 100%;
+    height: 300px;
+    display: none;
+  }
+}

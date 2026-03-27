@@ -1,0 +1,97 @@
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  background: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* subtle separator */
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Logo ── */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-icon img {
+ width:30px;
+ height: auto;
+ filter: brightness(0) invert(1);
+}
+
+.logo-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+/* ── Nav Links ── */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  letter-spacing: 0.01em;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #ffffff;
+}
+
+/* ── CTA Button ── */
+.navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 22px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.navbar-cta:hover {
+  background-color: rgba(255, 255, 255, 0.88);
+  transform: translateY(-1px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 0 24px;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
