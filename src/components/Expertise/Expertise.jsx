@@ -36,8 +36,8 @@ const Expertise = () => {
       {/* Background silhouette image container */}
       <div className="expertise-bg" aria-hidden="true">
         <img
-          src="/images/hf_20260323_111725_a2dc547b-66b7-4e3c-b418-9245515eb20d - Copy.png"
-          alt=""
+          src="/images/expertise-bg.jpg"
+          alt="Expertise and Strategic Domains"
           className="expertise-bg-img"
         />
       </div>

@@ -12,7 +12,7 @@ const CreativeEngineering = () => {
       num: "(02)",
       title: "Art Therapy & Mental Health",
       desc: "Using creative processes for cognitive and emotional well-being.",
-      img: "/images/hf_20260324_091449_c0852301-c250-4c31-89b7-6a167f61ff29 - Copy.png"
+      img: "/images/art-therapy-mental-health.png"
     },
     {
       num: "(03)",
