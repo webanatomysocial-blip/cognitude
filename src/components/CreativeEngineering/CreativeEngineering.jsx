@@ -6,7 +6,7 @@ const CreativeEngineering = () => {
       num: "(01)",
       title: "Performing Arts",
       desc: "Engaging cognitive processes in creativity, emotion, and memory.",
-      img: "/images/hf_20260323_111428_49b4b86d-286d-439b-a8bf-fd886b2ea67b.png"
+      img: "/images/hf_20260323_111428_3b7d3312-ee0a-44ed-972a-0962df78c65a - Copy.png"
     },
     {
       num: "(02)",
@@ -18,7 +18,7 @@ const CreativeEngineering = () => {
       num: "(03)",
       title: "Product Ideas",
       desc: "Blending cognitive science with artistic and also innovation.",
-      img: "/images/hf_20260323_111428_3b7d3312-ee0a-44ed-972a-0962df78c65a - Copy.png"
+      img: "/images/ce-product-ideas.png"
     }
   ];
 
